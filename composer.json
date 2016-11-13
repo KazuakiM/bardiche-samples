@@ -1,10 +1,10 @@
 {
     "repositories": [{
-        "type": "vcs",
-        "url":  "https://github.com/KazuakiM/bardiche"
+        "type":    "path",
+        "url":     "../bardiche"
     }],
     "require": {
-        "php": ">=7.0",
-        "KazuakiM/bardiche": "v001.x-dev"
+        "php":               ">=7.1",
+        "KazuakiM/bardiche": "@dev"
     }
 }
