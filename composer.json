@@ -1,10 +1,10 @@
 {
     "repositories": [{
-        "type":    "path",
-        "url":     "../bardiche"
+        "type": "path",
+        "url":  "../bardiche"
     }],
     "require": {
-        "php":               ">=7.1",
+        "php":               ">=7.0",
         "KazuakiM/bardiche": "@dev"
     }
 }

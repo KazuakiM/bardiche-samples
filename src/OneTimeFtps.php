@@ -24,17 +24,19 @@ try {
                 'remote_file_name'      => 'fate_t_harlaown.txt',
                 'local_directory_path'  => '/tmp',
                 'local_file_name'       => 'fate_testarossa.txt',
+                'ascii'                 => FTP_ASCII,
             ],
             //[
             //    'remote_directory_path' => '/takamachi',
             //    'remote_file_name'      => 'fate_t_harlaown.txt',
             //    'local_directory_path'  => '/tmp',
             //    'local_file_name'       => 'fate_testarossa.txt',
+            //    'ascii'                 => FTP_ASCII,
             //],
         ],
-        'port'  => 2224,                                   // options default: 21
-        'pasv'  => false,                                  // options default: true
-        'ascii' => true,                                   // options default: true
+        'port'     => 2224,                                // options default: 21
+        'pasv'     => false,                               // options default: true
+        'parallel' => 2,                                   // options default: 0
     ], FileClients::BARDICHE_UPLOAD);
 
     FileClients::one(FileClientsType::BARDICHE_TYPE_FTPS(), [
@@ -49,17 +51,19 @@ try {
                 'remote_file_name'      => 'fate_t_harlaown.txt',
                 'local_directory_path'  => '/tmp',
                 'local_file_name'       => 'fate_sama.txt',
+                'ascii'                 => FTP_ASCII,
             ],
             //[
             //    'remote_directory_path' => '/takamachi',
             //    'remote_file_name'      => 'fate_t_harlaown.txt',
             //    'local_directory_path'  => '/tmp',
             //    'local_file_name'       => 'nanoha.txt',
+            //    'ascii'                 => FTP_ASCII,
             //],
         ],
-        'port'  => 2224,                                   // options default: 21
-        'pasv'  => false,                                  // options default: true
-        'ascii' => true,                                   // options default: true
+        'port'     => 2224,                                // options default: 21
+        'pasv'     => false,                               // options default: true
+        'parallel' => 2,                                   // options default: 0
     ], FileClients::BARDICHE_DOWNLOAD);
 
 } catch (BardicheException $e) {
